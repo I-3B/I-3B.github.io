@@ -1,0 +1,92 @@
+body::before {
+    content: '';
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#container{
+    width: 800px;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+
+#form-container{
+    background-color: rgba(61, 44, 138, 0.815);
+    width: 800px;
+    height: 1000px;
+    border-radius: 25px;
+    content: '';
+    
+}
+form h1{
+    text-align: center;
+}
+form{
+    font-family: sans-serif;
+    text-align: left;
+    padding: 40px;
+    
+    font-size:40px;
+    color: azure;
+    margin: auto;
+
+}
+input[type=text],input[type=password]{
+    width:90%;
+    padding: 12px 20px;
+    font-size: 25px;
+    box-sizing: border-box;
+    border: 3px solid rgb(89, 0, 255);
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    outline: none;
+
+}
+input[type=text]:focus,input[type=password]:focus{
+    border: 3px solid rgb(114, 247, 25);
+}
+.radio{
+    display: inline-block;
+    margin-right: 9px;
+    min-height: 20px;
+    min-width: 20px;
+    cursor: pointer;
+}
+.radio-label{
+   
+    font-size: 30px;
+}
+input[type=submit]{
+    margin: auto;
+    width: 100%;
+    padding: 15px 30px;
+    color:azure;
+    background-color: rgb(43, 26, 116);
+    border:none;
+    font-size: larger;
+    display: block;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+input[type=submit]:hover{
+    color: rgb(203, 156, 235);
+    background-color: rgb(90, 59, 230);
+}
+@media (min-width: 480px) {
+    form {
+      padding:30px;
+    }
+  }
